@@ -548,6 +548,7 @@ cdef class Matrix:
         :Parameters:
             `ma`: Matrix
                 The matrix to multiply by
+        .. versionadded:: 1.9.1
         '''
         cdef Matrix mr = Matrix()
         cdef double *a = <double *>ma.mat
